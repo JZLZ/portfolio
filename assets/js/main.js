@@ -242,7 +242,7 @@
     }
   });
 
-  /**
+   /**
    * Animation on scroll
    */
   window.addEventListener('load', () => {
@@ -260,3 +260,20 @@
   new PureCounter();
 
 })()
+
+ /**
+   * Function abrir e fechar imagem.
+   */
+
+function abrirImagem(caminhoImagem) {
+  const modal = document.getElementById('modal');
+  const imagem = document.getElementById('imagem');
+  
+  imagem.src = caminhoImagem;
+  modal.style.display = 'block';
+}
+
+function fecharImagem() {
+  const modal = document.getElementById('modal');
+  modal.style.display = 'none';
+}
